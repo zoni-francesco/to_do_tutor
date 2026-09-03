@@ -1,0 +1,5 @@
+*.o
+*.out
+a.out
+to_do_tutor
+data/*.txt
