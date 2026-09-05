@@ -35,6 +35,9 @@ typedef struct Task{
 /* ==================== Funzioni ==================== */
 
 Task *nuova_task(struct tm scadenza, Priorità priorità, Status status, char *titolo, char *descrizione);
+void *elenco_task(void); //Legge il file dove sono salvate in memoria. Serve implementare un'Arraylist
+                         //o slice per il buffer da usare.
+void stampa_task();
 void visualizza_task(Task *task);
 void ricerca_task(Task *task, Criterio criterio, char *filtro);
 void completa_task(Task *task);
